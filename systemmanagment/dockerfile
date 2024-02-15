@@ -1,0 +1,7 @@
+FROM adoptopenjdk:17-jdk-hotspot-bionic
+
+WORKDIR /systemmanagment
+
+COPY target/*,jar systemmanagment-0.0.1-SNAPSHOT.jar
+
+ENTRYPOINT ["java","-jar","/systemmanagment-0.0.1-SNAPSHOT.jar"]

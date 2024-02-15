@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-UserSystemmanagmentApplication<systemmanagment>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.systemmanagment.UserSystemmanagmentApplication",
+            "projectName": "systemmanagment",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-UserSystemmanagmentApplication<systemmanagment>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.systemmanagment.UserSystemmanagmentApplication",
+            "projectName": "systemmanagment",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

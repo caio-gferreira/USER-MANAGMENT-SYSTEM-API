@@ -1,0 +1,22 @@
+version: '3'
+services:
+  meu-app:
+    image: adoptopenjdk:17-jdk-hotspot
+    container_name: application-system-users
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mongodb
+    environment:
+      SPRING_DATA_MONGODB_HOST: mongodb
+      SPRING_DATA_MONGODB_PORT: 27017
+    volumes:
+      - ./target:/app/target   # Certifique-se de que o diretório do seu JAR esteja correto
+
+  mongodb:
+    image: mongo
+    container_name: mongodb-container
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./mongo-data:/data/db  # Volume para persistir os dados do MongoDB
